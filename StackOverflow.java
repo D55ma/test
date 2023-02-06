@@ -3,7 +3,7 @@
 
 // Class 1
 class StackOverflow {
-
+int i;
 	// method of this class
 	public static void test(int i)
 	{
@@ -15,6 +15,13 @@ class StackOverflow {
 			test(i++);
 		}
 	}
+	
+	
+	public StackOverflow(int i)
+	{
+	i=i;	
+	}
+	
 }
 
 // Class 2
