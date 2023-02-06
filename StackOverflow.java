@@ -9,8 +9,8 @@ class StackOverflow {
 	{
 		// No correct as base condition leads to
 		// non-stop recursion.
-		if (i == 0)
-			return;
+		if (i == 5)
+			i=i/0;
 		else {
 			test(i++);
 		}
@@ -24,8 +24,7 @@ public class GFG {
 	// Main driver method
 	public static void main(String[] args)
 	{
-		// Testing for error by passing
-		// custom integer as an argument
-		StackOverflow.test(5);
+	StackOverflow s1=new StackOverflow();
+		s1.test(5);
 	}
 }
